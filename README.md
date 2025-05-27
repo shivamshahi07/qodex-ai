@@ -2,8 +2,9 @@
 
 A modern, responsive weather dashboard built with React.js, Vite, and Tailwind CSS. This application provides real-time weather information, 5-day forecasts, and user authentication with saved city preferences.
 
-![Weather Dashboard Screenshot]
-[Add your application screenshot here]
+🌐 **Live Demo**: [qodex-weather.shivamshahi.tech](https://qodex-weather.shivamshahi.tech)
+
+![Weather Dashboard Screenshot](./Dashboard.png)
 
 ## 🌟 Features
 
@@ -88,17 +89,20 @@ A modern, responsive weather dashboard built with React.js, Vite, and Tailwind C
 ### Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/shivamshahi07/qodex-ai
    cd weather-dashboard
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Create a .env file:
+
    ```env
    VITE_OPENWEATHER_API_KEY=your_api_key
    VITE_SUPABASE_URL=your_supabase_url
@@ -129,9 +133,10 @@ created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 ### API Integration
 
 - **Weather Data Fetching**:
+
 ```javascript
   fetch(\`https://api.openweathermap.org/data/2.5/weather?q=\${city}&appid=\${API_KEY}&units=metric\`)
-  ```
+```
 
 - **5-Day Forecast**:
   ```javascript

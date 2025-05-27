@@ -18,7 +18,7 @@ function App() {
   const [password, setPassword] = useState("");
   const [savedCities, setSavedCities] = useState([]);
 
-  const API_KEY = "2dd5f9c0cd712493c3377e3d6a8748ab"; // Replace with your API key
+  const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
   useEffect(() => {
     // Get initial session
